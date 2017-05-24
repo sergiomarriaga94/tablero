@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>tablero</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>
+            Tablero Compartido
+        </h1>
+        <div id="output">
+            
+        </div>
+        
+        <table>
+            <tr>
+                <td>
+                    <canvas id="myCanvas" width="500" height="500" style="border:1px solid #000000;">
+                        
+                    </canvas>
+                </td>
+                <td>
+                    <form name="inputForm">
+                        <table>
+                            <tr>
+                                <th>Color</th>
+                                <td><input type="radio" name="color" value="#FF0000" checked>Rojo</td>
+                                <td><input type="radio" name="color" value="#0000FF">Azul</td>
+                                <td><input type="radio" name="color" value="#FF9900">Rojo</td>
+                                <td><input type="radio" name="color" value="#33cc33">verde</td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    Figura
+                                </th>
+                                <td><input type="radio" name="shape" value="square" checked="">Cuadrado</td>
+                                <td><input type="radio" name="shape" value="circle">Circulo</td>
+                            </tr>
+                        </table>
+                    </form>
+                </td>
+            </tr>
+        </table>
+        <script type="text/javascript" src="websocket.js"></script>
+        <script type="text/javascript" src="tablero.js"></script>
+    </body>
+</html>
